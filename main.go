@@ -6,6 +6,7 @@ import (
 	"log"
 	"os"
 	"strings"
+	c "github.com/TreyBastian/colourize"
 )
 
 func main() {
@@ -25,8 +26,19 @@ func main() {
 
 	for word := 0; word <= len(words) - 1; word++ {
 		results := strings.Count(contents, words[word])
-		fmt.Printf("%v -- ", words[word])
-		fmt.Println(results)
+		if results > 3 {
+			format := words[word] + " -- "
+			fmt.Print(c.Colourize(format, c.Red, c.Bold))
+			fmt.Println(results)
+		} else if results >= 1 && results < 3 {
+			format := words[word] + " -- "
+			fmt.Print(c.Colourize(format, c.Yellow, c.Bold))
+			fmt.Println(results)
+		} else if results == 0 {
+			format := words[word] + " -- "
+			fmt.Print(c.Colourize(format, c.Green, c.Bold))
+			fmt.Println(results)
+		}
 	}
 
 
