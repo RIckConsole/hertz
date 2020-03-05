@@ -6,9 +6,15 @@ It counts all of the times you use each word and prints the results to the conso
 
 ## Usage
 There is a windows program pre built in this repo, and you must run it from the terminal like so:
+Linux:
 ```bash
 ./hertz /path/to/your/file
 ```
+Windows: 
+```bash
+hertz.exe \path\to\your\file
+```
+
 
 ## Example
 
