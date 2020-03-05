@@ -10,6 +10,10 @@ There is a windows program pre built in this repo, and you must run it from the 
 ./hertz /path/to/your/file
 ```
 
+## Example
+
+<a href="https://asciinema.org/a/HFxBzWmBYczAaADWAmDAwJALH" target="_blank"><img src="https://asciinema.org/a/HFxBzWmBYczAaADWAmDAwJALH.svg" /></a>
+
 ## Future plans
 I plan to add an argument option that allows you to specify the authors name, and also have it count the number of paragraphs. 
 Until then, it gets a lot of the work done really fast. 
